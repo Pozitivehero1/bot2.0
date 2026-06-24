@@ -18,7 +18,7 @@ class SignalScore:
     risk_reward: float    # риск/прибыль
 
 class SignalFilter:
-    def __init__(self, min_score: float = 40.0):
+    def __init__(self, min_score: float = 25.0):
         self.min_score = min_score
     
     def evaluate(self, mtf: MultiTimeframeIndicators) -> Optional[SignalScore]:
